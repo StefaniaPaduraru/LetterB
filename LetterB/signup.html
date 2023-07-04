@@ -1,0 +1,53 @@
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetterB</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="signup.js"></script>
+</head>
+
+<body>
+    <div class="body-signin">
+        <div class="main-card">
+            <div class="foto-card">
+                <img src="images/library.jpg" alt="pic" id="img-signin">
+            </div>
+            <div class="signin-card">
+                <div class="logo-signin">
+                    <img src="./images/logo-black.png" alt="logo" id="logo">
+                </div>
+                <div class="box-container-create">
+                    <h3>Welcome to LetterB</h3>
+                    <h6>From Our Bookshelf to Yours</h6>
+                    <form name="signUpForm" action="signup.php"  method="post" onsubmit="return validateForm()">
+                        <div class="inputs">
+                            <label for="fname">First name</label>
+                            <input type="text" name="fname">
+                        </div>
+                        <div class="inputs">
+                            <label for="lname">Last name</label>
+                            <input type="text" name="lname">
+                        </div>
+                        <div class="inputs">
+                            <label for="email">Email address</label>
+                            <input type="text" name="email">
+                        </div>
+                        <div class="inputs">
+                            <label for="password">Password</label>
+                            <input type="password" name="password"/>
+                        </div>
+                        <div class="inputs">
+                            <label for="cpassword">Confirm Password</label>
+                            <input type="password" name="cpassword"/>
+                        </div>
+                            <button class="create-account" ame="signup" type="submit"  value="Submit" style="margin-left: 50px;">Create account</button>
+                    </form>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
